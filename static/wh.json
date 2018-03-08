@@ -1,0 +1,15 @@
+{
+	"animals": {
+		"dog": [
+			{
+				"name": "小气鬼罗玲",
+				"age": 15,
+				"sex":"女"
+			}, {
+				"name": "Marty",
+				"age": null,
+				"sex":"女"
+			}
+		]
+	}
+}
