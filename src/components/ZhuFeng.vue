@@ -1,7 +1,7 @@
 <template>
 
 	<div class="demo">
-		v-model:(双向数据绑定，改变其中的值，下面两个会跟着改变)
+		v-model:(对应script标签中的data数据，双向数据绑定，改变其中的值，下面两个会跟着改变)
 		<br/>
 		<input type="text" name="" v-model="text" /> 
 		{{text}}
