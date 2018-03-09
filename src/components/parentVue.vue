@@ -9,12 +9,18 @@
 			<footer-vue></footer-vue>
 			<button @click="listen">爸爸接听电话</button>
 		</div>
-
+		<hr />
 		<div class="new parent counter">
 			<p>{{ total }}</p>
 			<!--父组件在使用子组件的地方直接用 v-on 来监听子组件触发的事件（increment）-->
 			<button-counter v-on:increment="incrementTotal"></button-counter>
 			<button-counter @increment="incrementTotal"></button-counter>
+		</div>
+		<hr />
+		<div>
+			<!--message 定义在子组件的 props 中-->
+			<p>通过props传值</p>
+			<child :message="name"></child>
 		</div>
 
 	</div>
@@ -23,6 +29,8 @@
 <script>
 	import connect from '@/js/connect.js'
 	import buttonCounter from './myTest/buttonCounter.vue'
+	import child from './myTest/child.vue'
+
 	/*//引入子组件对象
 	import header from './myTest/headerVue.vue';
 	import body from './myTest/bodyVue.vue';
@@ -32,13 +40,15 @@
 		data() {
 			return {
 				texttwo: '---父组件携带的变量',
-				total: 0
+				total: 0,
+				name: '罗玲玲'
 			}
 		},
 		methods: {
 			listen() {
 				//this.$on(事件名,回调函数(参数))
 				connect.$on('phone', function(msg) {
+					/*alert(msg);*/
 					console.log(msg);
 				})
 			},
@@ -55,7 +65,8 @@
 			footer
 		}*/
 		components: {
-			buttonCounter: buttonCounter
+			buttonCounter: buttonCounter,
+			child
 		}
 	}
 </script>
