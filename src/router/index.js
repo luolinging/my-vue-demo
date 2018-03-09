@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Test from '@/components/Test'
 import FirstTest from '@/components/FirstTest'
-import ZhuFeng from '@/components/ZhuFeng'
+import AllDemo from '@/components/AllDemo'
 import test_ajax_axios from '@/components/myTest/test_ajax_axios' //@相当于/src
 import axios from '@/components/myTest/axios_get_post_http'
 import parentVue from '@/components/parentVue'
@@ -27,9 +27,9 @@ export default new Router({
 			name: 'FirstTest',
 			component: FirstTest
 		}, {
-			path: '/ZhuFeng',
-			name: 'ZhuFeng',
-			component: ZhuFeng
+			path: '/AllDemo',
+			name: 'AllDemo',
+			component: AllDemo
 		},
 		{
 			path: '/test_ajax_axios',

@@ -91,10 +91,14 @@ npm test
 	 + 调用(js中)----------import add from './myTest/addModule.vue';
 	 + 注册(js中)----------components: {"addModule": add},
 	 + 引用(template中)----<addModule></addModule>
+	 
 	- 父组件给子组件传值
 	 + 在子组件中声明 ：props
 	 + props可以是数组或对象，用于接收来自父组件的数据,父组件的数据需要通过 prop才能下发到子组件中
 	 
+* vue中双向数据绑定的原理-------数据劫持
+	+ vue.js 采用数据劫持结合发布者-订阅者模式的方式，通过Object.defineProperty()来劫持各个属性的setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调。
+
 
 * <a href="javascript: void(0);" @mouseenter="xxxx"></a>   解释这句话
 

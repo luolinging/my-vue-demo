@@ -10,7 +10,7 @@
 				<router-link to="/Test">go to test</router-link>
 				<router-link to="/">go to HelloWorld</router-link>
 				<router-link to="/FirstTest">go to FirstTest</router-link>
-				<router-link to="/ZhuFeng">go to ZhuFeng</router-link>
+				<router-link to="/AllDemo">AllDemo</router-link>
 				<router-link to="/test_ajax_axios">go to ajax请求</router-link>
 				<router-link to="/parentVue">go to 父组件</router-link>
 				<router-link to="/axios">Axios</router-link>
