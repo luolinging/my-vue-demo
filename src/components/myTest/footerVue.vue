@@ -1,7 +1,7 @@
 <template>
-	<div id="">
+	<div>
 		我是底
-		<button @click="call">打电话给爸爸</button>
+		<button @click="call">打电话给爸爸</button>（显示结果在控制台中可以查看）
 	</div>
 
 </template>
