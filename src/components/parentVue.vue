@@ -12,7 +12,7 @@
 
 		<div class="new parent counter">
 			<p>{{ total }}</p>
-			<!--父组件在使用子组件的地方直接用 v-on 来监听子组件触发的事件-->
+			<!--父组件在使用子组件的地方直接用 v-on 来监听子组件触发的事件（increment）-->
 			<button-counter v-on:increment="incrementTotal"></button-counter>
 			<button-counter @increment="incrementTotal"></button-counter>
 		</div>
@@ -33,7 +33,6 @@
 			return {
 				texttwo: '---父组件携带的变量',
 				total: 0
-
 			}
 		},
 		methods: {
