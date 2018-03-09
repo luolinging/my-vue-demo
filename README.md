@@ -86,16 +86,18 @@ npm test
 	 	+ 可以防御XSRF攻击！
 	 	
 
-* 父子组件
-	- 在父组件中显示子组件的步骤
-	 + 调用(js中)----------import add from './myTest/addModule.vue';
-	 + 注册(js中)----------components: {"addModule": add},
-	 + 引用(template中)----<addModule></addModule>
-	 
-	- 父组件给子组件传值
+* 父子组件 
+	- 传值：父组件--->子组件
 	 + 在子组件中声明 ：props
 	 + props可以是数组或对象，用于接收来自父组件的数据,父组件的数据需要通过 prop才能下发到子组件中
-	 
+	 + 在父组件中调用(js中)----------import add from './myTest/child.vue';
+	 + 在父组件中注册(js中)----------components: {"child": child},
+	 + 在父组件中引用(template中)----<child></child>
+	
+	prop 是单向绑定的：当父组件的属性变化时，将传导给子组件，但是不会反过来。修改子组件的 prop 值，是不会传回给父组件去更新视图的。 
+	- 传值：子组件--->父组件（自定义事件）
+	 + 父组件 $on(eventName)监听自定义事件，当子组件里 $emit(eventName) 触发该自定义事件的时候，父组件执行相应的操作。
+	
 * vue中双向数据绑定的原理-------数据劫持
 	+ vue.js 采用数据劫持结合发布者-订阅者模式的方式，通过Object.defineProperty()来劫持各个属性的setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调。
 

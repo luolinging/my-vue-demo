@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Test from '@/components/Test'
 import FirstTest from '@/components/FirstTest'
-import AllDemo from '@/components/AllDemo'
+import DataBinding from '@/components/DataBinding'
 import test_ajax_axios from '@/components/myTest/test_ajax_axios' //@相当于/src
 import axios from '@/components/myTest/axios_get_post_http'
 import parentVue from '@/components/parentVue'
@@ -27,9 +27,9 @@ export default new Router({
 			name: 'FirstTest',
 			component: FirstTest
 		}, {
-			path: '/AllDemo',
-			name: 'AllDemo',
-			component: AllDemo
+			path: '/DataBinding',
+			name: 'DataBinding',
+			component: DataBinding
 		},
 		{
 			path: '/test_ajax_axios',
