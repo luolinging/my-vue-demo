@@ -4,34 +4,26 @@
 			<el-row :gutter="15">
 				<el-col :span="6">
 					<div class="grid-content bg-purple">
-						<img src="../../assets/logo.png" />
-						<span class="word-style">
-							差旅申请
-						</span>
+						<img src="../../assets/setting.png" />
+						<span class="word-style">差旅申请</span>
 					</div>
 				</el-col>
 				<el-col :span="6">
 					<div class="grid-content bg-purple">
-						<img src="../../assets/logo.png" />
-						<span class="word-style">
-							差旅借款
-						</span>
+						<img src="../../assets/setting.png" />
+						<span class="word-style">差旅借款</span>
 					</div>
 				</el-col>
 				<el-col :span="6">
 					<div class="grid-content bg-purple">
-						<img src="../../assets/logo.png" />
-						<span class="word-style">
-							差旅报销
-						</span>
+						<img src="../../assets/setting.png" />
+						<span class="word-style">差旅报销</span>
 					</div>
 				</el-col>
 				<el-col :span="6">
 					<div class="grid-content bg-purple">
-						<img src="../../assets/logo.png" />
-						<span class="word-style">
-							通用报销
-						</span>
+						<img src="../../assets/setting.png" />
+						<span class="word-style">通用报销</span>
 					</div>
 				</el-col>
 			</el-row>
@@ -41,34 +33,26 @@
 			<el-row :gutter="15">
 				<el-col :span="6">
 					<div class="grid-content bg-purple">
-						<img src="../../assets/logo.png" />
-						<span class="word-style">
-							客商预付款
-						</span>
+						<img src="../../assets/setting.png" />
+						<span class="word-style">客商预付款</span>
 					</div>
 				</el-col>
 				<el-col :span="6">
 					<div class="grid-content bg-purple">
-						<img src="../../assets/logo.png" />
-						<span class="word-style">
-							客商报销单
-						</span>
+						<img src="../../assets/setting.png" />
+						<span class="word-style">客商报销单</span>
 					</div>
 				</el-col>
 				<el-col :span="6">
 					<div class="grid-content bg-purple">
-						<img src="../../assets/logo.png" />
-						<span class="word-style">
-							还款单
-						</span>
+						<img src="../../assets/setting.png" />
+						<span class="word-style">还款单</span>
 					</div>
 				</el-col>
 				<el-col :span="6">
 					<div class="grid-content bg-purple">
-						<img src="../../assets/logo.png" />
-						<span class="word-style">
-							设置
-						</span>
+						<img src="../../assets/setting.png" />
+						<span class="word-style">设置	</span>
 					</div>
 				</el-col>
 			</el-row>
@@ -102,8 +86,7 @@
 		background: #fff;
 		height: 120px;
 		margin: 0 auto;
-		width: 100%;
-		
+		width: 100%;		
 	}
 	
 	img {
@@ -119,7 +102,8 @@
 		display: inline-block;	
 		vertical-align: middle;	
 		width: 100px;
-		padding-top: 20px;
+		padding-top: 23px;
 		text-align: left;
+		color: #2C3E50;
 	}
 </style>
