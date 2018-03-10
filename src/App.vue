@@ -14,6 +14,7 @@
 				<router-link to="/test_ajax_axios">Ajax请求</router-link>
 				<router-link to="/parentVue">父子组件</router-link>
 				<router-link to="/axios">Axios</router-link>
+				<router-link to="/account">自动报账</router-link>
 			</span>
 
 		</div>
