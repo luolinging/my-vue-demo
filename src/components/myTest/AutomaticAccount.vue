@@ -1,7 +1,7 @@
 <template>
 	<div class="main account">
 		<div class="one">
-			<el-row :gutter="10">
+			<el-row :gutter="15">
 				<el-col :span="6">
 					<div class="grid-content bg-purple">
 						<img src="../../assets/logo.png" />
@@ -38,7 +38,7 @@
 		</div>
 
 		<div class="two">
-			<el-row :gutter="10">
+			<el-row :gutter="15">
 				<el-col :span="6">
 					<div class="grid-content bg-purple">
 						<img src="../../assets/logo.png" />
@@ -91,19 +91,19 @@
 	
 	.el-row {
 		margin-bottom: 12px;
-		&:last-child {
-			margin-bottom: 0;
-		}
 	}
 	
-	.el-col {
-		border-radius: 2px;
+	.grid-content {
+		border-radius: 4px;
 	}
 	
 	.bg-purple {
 		border: 1px solid #EEE;
 		background: #fff;
 		height: 120px;
+		margin: 0 auto;
+		width: 100%;
+		
 	}
 	
 	img {
@@ -115,11 +115,11 @@
 	}
 	
 	.word-style {
-		display: inline-block;
+		margin: 0 auto;
+		display: inline-block;	
+		vertical-align: middle;	
 		width: 100px;
-		vertical-align:middle;
-		margin-top: 20px;
+		padding-top: 20px;
+		text-align: left;
 	}
-	
-	.context {}
 </style>
