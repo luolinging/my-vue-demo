@@ -19,7 +19,6 @@
 				connect.$emit('phone', '62分钟后回来');
 			}
 		}
-
 	}
 </script>
 

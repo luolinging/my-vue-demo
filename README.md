@@ -92,7 +92,7 @@ npm test
 	 + props可以是数组或对象，用于接收来自父组件的数据,父组件的数据需要通过 prop才能下发到子组件中
 	 + 在父组件中调用(js中)----------import add from './myTest/child.vue';
 	 + 在父组件中注册(js中)----------components: {"child": child},
-	 + 在父组件中引用(template中)----<child> </child>
+	 + 在父组件中引用(template中)----<child v-bind:props> </child>
 	
 	prop 是单向绑定的：当父组件的属性变化时，将传导给子组件，但是不会反过来。修改子组件的 prop 值，是不会传回给父组件去更新视图的。 
 	- 传值：子组件--->父组件（自定义事件）
