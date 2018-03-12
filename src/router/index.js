@@ -8,6 +8,7 @@ import test_ajax_axios from '@/components/myTest/test_ajax_axios' //@相当于/s
 import axios from '@/components/myTest/axios_get_post_http'
 import parentVue from '@/components/parentVue'
 import account from '@/components/myTest/AutomaticAccount'
+import cssTest from '@/components/cssTest'
 
 Vue.use(Router)
 
@@ -48,6 +49,10 @@ export default new Router({
 			path:'/account',
 			name:'account',
 			component:account
+		},{
+			path:'/cssTest',
+			name:'cssTest',
+			component:cssTest
 		}
 	]
 })

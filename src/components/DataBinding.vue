@@ -3,12 +3,12 @@
 	<div class="demo">
 		<div class="v-model">
 			v-model:(对应script标签中的data数据，双向数据绑定，改变其中的值，下面两个会跟着改变)
-			<input type="text" name="" v-model="text" /> {{text}}
+			<input type="text" v-model="text" /> {{text}}
 		</div>
 
 		<div class="v-bind">
 			v-bind:(单向数据绑定，改变其中的值不会影响其他)
-			<input type="text" name="" v-bind:value="text" />
+			<input type="text" v-bind:value="text" />
 		</div>
 		<hr/>
 		<div class="stu">
@@ -25,6 +25,7 @@
 </template>
 
 <script>
+	
 	export default {
 		data() {
 			return {

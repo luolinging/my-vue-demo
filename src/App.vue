@@ -15,6 +15,7 @@
 				<router-link to="/parentVue">父子组件</router-link>
 				<router-link to="/axios">Axios</router-link>
 				<router-link to="/account">自动报账</router-link>
+				<router-link to="/cssTest">css2D转换</router-link>
 			</span>
 
 		</div>
