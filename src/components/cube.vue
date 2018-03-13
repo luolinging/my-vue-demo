@@ -17,7 +17,7 @@
 	.cube {
 		width: 200px;
 		height: 200px;
-		margin: 50px auto;
+		margin: 50px 100px;
 		position: relative;
 		/*perspective: 1000px;*/
 		/*opacity: 0.5;透明度*/

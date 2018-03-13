@@ -6,16 +6,21 @@
 		<div class="cube">
 			<cube></cube>
 		</div>
+		<div class="music-box">
+			<music></music>
+		</div>
 
 	</div>
 </template>
 
 <script>
 	import cube from './cube'
-
+	import music from './music_box'
+	
 	export default {
 		components: {
-			cube
+			cube,
+			music
 		}
 	}
 </script>
